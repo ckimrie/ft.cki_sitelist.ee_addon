@@ -9,7 +9,7 @@ This is an EE2.0 custom field type that will add a drop down list of all your Ex
 h2. Info
 
 Developed by Christopher Imrie, "http://www.christopherimrie.com":url<br/>
-License: http://creativecommons.org/licenses/by-sa/3.0/
+License: "http://creativecommons.org/licenses/by-sa/3.0/":url
 
 h2. Requirements
 
