@@ -1,0 +1,83 @@
+h1. CKI Site List Custom Field
+
+!http://www.ckidesign.co.uk/images/git/site_list_1.png!
+
+*ft.cki_sitelist.php*
+
+This is an EE2.0 custom field type that will add a drop down list of all your ExpressionEngine sites being run by the Multiple Site Manager
+
+h2. Info
+
+Developed by Christopher Imrie, "http://www.christopherimrie.com":url<br/>
+License: http://creativecommons.org/licenses/by-sa/3.0/
+
+h2. Requirements
+
+* ExpressionEngine 2.0
+
+h2. Installation
+
+* Copy <code>ft.cki_sitelist.php</code> to your <code>system/expressionengine/fieldtypes/</code> folder.<br/>
+* Select *CKI Site List* as the field type when creating a new custom field type
+
+h2. How to use
+
+The field type supports single tags only.  Use the tag on its own to return the selected site short_name_
+
+h3. Simple Example
+
+Lets say you have defined a custom field with a field label of *Site list* and field name *site_list* and through the publish form selected a site with an short_name of "default_site".  You can produce the site short name of the selected site by simply calling the field name tag on its own:
+
+<pre>
+	<code>
+		{exp:channel:entries channel="blog"}
+			<p>You selected site short name is {site_list}</p>
+		{/exp:channel:entries}
+	</code>
+</pre>
+
+*Returns:*
+<pre>
+	<code><p>You selected site short name is default_site</p></code>
+</pre>
+
+h3. Parameter Example
+
+Using the same site you have selected in the above example, we can retrieve different site attributes by using the <code>display</code> parameter:
+
+<pre>
+	<code>
+		{exp:channel:entries channel="blog"}
+			<p>You selected site ID is {site_list display="id"}</p>
+		{/exp:channel:entries}
+	</code>
+</pre>
+
+*Returns:*
+<pre>
+	<code>
+		<p>You selected site ID is 1</p>
+	</code>
+</pre>
+
+h2. Parameters
+
+h3. Display
+
+<pre>
+	<code>display="label"</code>
+</pre>
+
+Allows you to specify what site attribute to return.  This parameter is optional, and if not used, the tag will return the site short name by default.
+
+Accepts the following variables:
+* _id_ - Return the site id
+* _label_ - Returns the site label
+* _short_name_ - Returns the site short name
+* _description_ - Returns the site description
+
+
+h2. Changelog
+
+*1.0*
+* Initial Commit

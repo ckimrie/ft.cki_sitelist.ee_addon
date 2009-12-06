@@ -1,5 +1,13 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+/**
+*
+* @package			ft.cki_sitelist.ee_addon
+* @version			1.0
+* @author			Christopher Imrie ~ ckimrie <chris@christopherimrie.com>
+* @link				http://github.com/ckimrie/ft.cki_sitelist.ee_addon
+* @license			http://creativecommons.org/licenses/by-sa/3.0/
+*
+*/
 	class Cki_sitelist_ft extends EE_Fieldtype
 	{
 		var $info = array(
@@ -44,7 +52,7 @@
 			if ($data != '' && isset($params['display'])) {
 				
 				//Grab the site data
-				$this->EE->db->select('site_id, site_label, site_name');
+				$this->EE->db->select('site_id, site_label, site_name, site_description');
 				$this->EE->db->from('exp_sites');
 				$this->EE->db->where('site_name', $data);
 				$this->EE->db->limit(1);
@@ -68,8 +76,13 @@
 						case "id":
 							return $qa[0]['site_id'];
 							break;
+						
 						case "short_name";
 							return $data;
+							break;
+							
+						case "description":
+							return $qa[0]['site_description'];
 							break;
 					}
 				}else{
@@ -91,3 +104,5 @@
 		}
 	}
 	//END CLASS
+	
+/* End of file ft.cki_sitelist.php */
