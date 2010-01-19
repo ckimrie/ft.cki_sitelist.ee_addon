@@ -3,11 +3,11 @@ h1. CKI Site List Custom Field
 !http://www.ckidesign.co.uk/images/git/site_list_1.png!
 
 /***************************************************************/
-/																/
-/	The latest build of EE breaks this field as they are		/
-/	about to implement their custom field API.  Hence this 		/
-/	field will not work until EllisLab publish the API.			/
-/																/
+																
+	The latest build of EE breaks this field as they are		
+	about to implement their custom field API.  Hence this 		
+	field will not work until EllisLab publish the API.			
+																
 /***************************************************************/
 
 
