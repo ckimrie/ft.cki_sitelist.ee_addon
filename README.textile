@@ -2,6 +2,16 @@ h1. CKI Site List Custom Field
 
 !http://www.ckidesign.co.uk/images/git/site_list_1.png!
 
+/***************************************************************/
+/																/
+/	The latest build of EE breaks this field as they are		/
+/	about to implement their custom field API.  Hence this 		/
+/	field will not work until EllisLab publish the API.			/
+/																/
+/***************************************************************/
+
+
+
 *ft.cki_sitelist.php*
 
 This is an EE2.0 custom field type that will add a drop down list of all your ExpressionEngine sites being run by the Multiple Site Manager
