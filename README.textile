@@ -2,15 +2,6 @@ h1. CKI Site List Custom Field
 
 !http://www.ckidesign.co.uk/images/git/site_list_1.png!
 
-/***************************************************************/
-																
-	The latest build of EE breaks this field as they are		
-	about to implement their custom field API.  Hence this 		
-	field will not work until EllisLab publish the API.			
-																
-/***************************************************************/
-
-
 
 *ft.cki_sitelist.php*
 
@@ -28,6 +19,7 @@ h2. Requirements
 h2. Installation
 
 * Copy the <code>cki_sitelist</code> folder  to your <code>system/expressionengine/third_party/</code> folder.<br/>
+* Go to Add-ons -> Fieldtypes in the ExpressionEngine control panel and install the fieldtype labelled 'CKI Site List'
 * Select *CKI Site List* as the field type when creating a new custom field type
 
 h2. How to use
@@ -88,6 +80,9 @@ Accepts the following variables:
 
 
 h2. Changelog
+
+*1.1*
+* Updated to use the newly published fieldtype API
 
 *1.0*
 * Initial Commit

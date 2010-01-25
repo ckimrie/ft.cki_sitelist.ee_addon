@@ -2,7 +2,7 @@
 /**
 *
 * @package			ft.cki_sitelist.ee_addon
-* @version			1.0
+* @version			1.1
 * @author			Christopher Imrie ~ ckimrie <chris@christopherimrie.com>
 * @link				http://github.com/ckimrie/ft.cki_sitelist.ee_addon
 * @license			http://creativecommons.org/licenses/by-sa/3.0/
@@ -12,7 +12,7 @@
 	{
 		var $info = array(
 			'name'		=> 'CKI Site List',
-			'version'	=> '1.0'
+			'version'	=> '1.1'
 		);
 		
 		public function Cki_sitelist_ft()
@@ -100,7 +100,22 @@
 		
 		public function save_settings($data)
 		{
-			# Nothing	
+			return array();
+		}
+		
+		public function display_settings($data)
+		{
+			//nothing
+		}
+		
+		function install()
+		{
+			//nothing
+		}
+		
+		function unsinstall()
+		{
+			//nothing
 		}
 	}
 	//END CLASS
