@@ -17,7 +17,7 @@
 
 		public function Cki_sitelist_ft()
 		{
-			parent::EE_Fieldtype();
+			parent::__construct();
 		}
 
 		public function display_field($data, $cell = FALSE)
